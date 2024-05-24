@@ -1,58 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Electro Neuron </title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="../custom-scripts.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f2f3fb" />
+    <title>Electro Neuron</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/style/style.css" rel="stylesheet" />
+    <!-- Unpkg for card scroll reveal effect -->
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
-    <main>
-      <!-- Header Start -->
-      <header>
-        <nav class="nav container">
-          <h2 class="nav_logo"><a href="#">Electro Neuron</a></h2>
+    <div class="wrapper">
+      <div class="container">
+        <!----Picture and name---->
+        <div class="picture">
+          <img
+            src="assets/logo.png"
+            alt="Logo"
+          />
+        </div>
+        <!--On loading name effect-->
+        <div class="name" translate="no">
+        <span>
+        <span>Eletro
+        </span>
+        </span>
+        <span>
+        <span>
+        </span>
+      </span> 
+      <span>
+        <span>Neu</span>
+      </span><span><span>ro</span></span><span><span>n</span></span>
+        </div>
 
-          <ul class="menu_items">
-            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
-            <li><a href="#" class="nav_link">Home</a></li>
-            <li><a href="#" class="nav_link">About</a></li>
-            <li><a href="#" class="nav_link">Service</a></li>
-            <li><a href="#" class="nav_link">Project</a></li>
-            <li><a href="https://t.ly/viVWF" class="nav_link">Youtube</a></li>
-          </ul>
-          <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
-        </nav>
-      </header>
-      <!-- Header End -->
-
-      <!-- Hero Start -->
-      <section class="hero">
-        <div class="row container">
-          <div class="column">
-            <h2>Electro <br />Neuron</h2>
-            <p>Electro Neuron, an edtech company founded with a vision to introduce the recent technology to students by training them in technologies such as Robotics, IoT, Embedded systems in a fun filled and engaging way.​</p>
-            <div class="buttons">
-              <button class="btn">Read More</button>
-              <button class="btn">Contact Us</button>
+        <!----Few personal detail---->
+        <!--more details button-->
+        <div class="info-box">
+          About me
+          <div class="toggle" onclick="vibrate()">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <!--details-->
+          <div>
+            <br />
+            <div class="details">
+              <ul>
+                <li class="about">
+                  Electro Neuron, an edtech company founded with a vision to introduce the recent technology to students by training them in technologies such as Robotics, IoT, Embedded systems in a fun filled and engaging way
+                  <br /><br />
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="column">
-            <img src="images/hero.png" alt="heroImg" class="hero_img" />
-          </div>
         </div>
-        <img src="images/bg-bottom-hero.png" alt="" class="curveImg" />
-      </section>
-      <!-- Hero End-->
-    </main>
-
-    <script>
-      const header = document.querySelector("header");
-      const menuToggler = document.querySelectorAll("#menu_toggle");
-
-      menuToggler.forEach(toggler => {
-        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
-      });
-    </script>
+        <!----All social media buttons---->
+        <div class="social-media">
+          <a href="mailto:electroneuron.edu@gmail.com">
+            <div><i class="fa-solid fa-envelope"></i>Email</div>
+          </a>
+          <a href="https://youtube.com/channel/UC9QQOQ4DGeSdLuKTZ1nXTAg"
+            ><div><i class="fa-brands fa-youtube"></i>YouTube</div>
+          </a>
+          <a href="https://www.facebook.com/"
+            ><div><i class="fa-brands fa-facebook-f"></i>Facebook</div>
+          </a>
+          <a href="https://instagram.com/"
+            ><div><i class="fa-brands fa-instagram"></i>Instagram</div>
+          </a>
+          <a href="https://github.com/">
+            <div><i class="fa-brands fa-github"></i>Github</div>
+          </a>
+          
+          <a href="https://www.linkedin.com/"
+            ><div><i class="fa-brands fa-linkedin-in"></i>LinkedIn</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
